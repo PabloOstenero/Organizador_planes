@@ -171,3 +171,126 @@ Para implementar las THD:
 3.  Integrar el aprendizaje automático para la optimización: Utilizar ML para predecir la duración de las tareas y optimizar los horarios.
 4.  Desarrollar una aplicación móvil: Crear una aplicación móvil para proporcionar a los usuarios un acceso conveniente a sus horarios.
 5.  Implementar la conectividad IoT: Conectarse a sensores y dispositivos para recopilar datos en tiempo real.
+
+
+## Objetivos estratégicos (6a):
+
+**¿Qué objetivos estratégicos específicos de la empresa aborda tu software?**
+
+El software aborda los siguientes objetivos estratégicos:
+
+*   Optimización del tiempo y recursos: Permite a los usuarios organizar sus horarios de manera eficiente, priorizando tareas importantes.
+*   Digitalización de procesos: Facilita la transición de métodos manuales de planificación a una solución digital.
+*   Mejora de la productividad: Ayuda a los usuarios a maximizar el uso de su tiempo disponible, reduciendo el tiempo improductivo.
+
+**¿Cómo se alinea el software con la estrategia general de digitalización?**
+
+El software se alinea con la estrategia de digitalización al:
+
+*   Proporcionar una herramienta digital que automatiza la planificación de horarios.
+*   Ofrecer la posibilidad de integrar tecnologías habilitadoras como almacenamiento en la nube, aprendizaje automático e IoT en futuras versiones.
+*   Reducir la dependencia de métodos manuales o en papel, promoviendo la eficiencia y la sostenibilidad.
+
+## Áreas de negocio y comunicaciones (6b):
+
+**¿Qué áreas de la empresa (producción, negocio, comunicaciones) se ven más beneficiadas con tu software?**
+
+*   Producción: Mejora la asignación de recursos y la programación de tareas, optimizando los flujos de trabajo.
+*   Negocio: Ayuda a los equipos a cumplir plazos y priorizar tareas críticas, mejorando la gestión de proyectos.
+*   Comunicaciones: Facilita la coordinación entre equipos al proporcionar un horario claro y estructurado.
+
+**¿Qué impacto operativo esperas en las operaciones diarias?**
+
+*   Reducción de conflictos en la asignación de tareas y recursos.
+*   Incremento en la productividad al priorizar tareas importantes.
+*   Mejora en la planificación y cumplimiento de plazos.
+
+## Áreas susceptibles de digitalización (6c):
+
+**¿Qué áreas de la empresa son más susceptibles de ser digitalizadas con tu software?**
+
+*   Gestión del tiempo: Digitalización de la planificación y asignación de tareas.
+*   Gestión de proyectos: Automatización de la programación y seguimiento de tareas.
+*   Recursos humanos: Optimización de la asignación de horarios para empleados.
+
+**¿Cómo mejorará la digitalización las operaciones en esas áreas?**
+
+*   Eficiencia: Reducción del tiempo necesario para planificar y asignar tareas.
+*   Precisión: Eliminación de errores humanos en la programación.
+*   Colaboración: Mejora en la comunicación y coordinación entre equipos.
+
+## Encaje de áreas digitalizadas (AD) (6d):
+
+**¿Cómo interactúan las áreas digitalizadas con las no digitalizadas?**
+
+Las áreas digitalizadas pueden proporcionar datos estructurados y organizados a las áreas no digitalizadas, facilitando la toma de decisiones.
+
+**¿Qué soluciones o mejoras propondrías para integrar estas áreas?**
+
+1.  Implementar APIs para conectar el software con sistemas existentes en áreas no digitalizadas.
+2.  Capacitar a los usuarios en el uso del software para facilitar la transición.
+3.  Desarrollar una aplicación móvil para extender el alcance del software a usuarios en movimiento.
+
+## Necesidades presentes y futuras (6e):
+
+**¿Qué necesidades actuales de la empresa resuelve tu software?**
+
+*   Organización del tiempo: Permite a los usuarios planificar y priorizar tareas importantes, optimizando el uso de su tiempo disponible.
+*   Automatización de la planificación: Genera horarios automáticamente, eliminando la necesidad de realizar esta tarea manualmente.
+*   Gestión eficiente de recursos: Ayuda a asignar tareas a los espacios de tiempo disponibles de manera óptima.
+
+## Relación con tecnologías (6f):
+
+**¿Qué tecnologías habilitadoras has empleado y cómo impactan en las áreas de la empresa?**
+
+*   Tkinter (GUI): Proporciona una interfaz gráfica intuitiva que mejora la experiencia del usuario al interactuar con el software.
+*   Heapq (priorización): Permite priorizar tareas de manera eficiente, asegurando que las más importantes se asignen primero.
+*   Estructuras de datos en memoria: Uso de diccionarios y listas para gestionar tareas y horarios de manera rápida y flexible.
+
+**¿Qué beneficios específicos aporta la implantación de estas tecnologías?**
+
+*   Tinker facilita la adopción del software al ofrecer una interfaz amigable y accesible.
+*   Heapq mejora la eficiencia en la asignación de tareas, maximizando el impacto del tiempo disponible.
+*   Las estructura de datos en memoria permiten un procesamiento rápido de datos, ideal para aplicaciones locales y en tiempo real.
+
+## Brechas de seguridad (6g):
+
+**¿Qué posibles brechas de seguridad podrían surgir al implementar tu software?**
+
+1.  Pérdida de datos: Los datos no se almacenan de forma persistente, lo que puede provocar su pérdida al cerrar la aplicación.
+2.  Acceso no autorizado: No hay mecanismos de autenticación para proteger el acceso al software.
+3.  Manipulación de datos: La falta de validación avanzada podría permitir la introducción de datos inconsistentes o maliciosos.
+
+**¿Qué medidas concretas propondrías para mitigarlas?**
+
+1.  Almacenamiento persistente: Implementar almacenamiento en archivos (JSON, SQLite) para guardar los datos de manera segura.
+2.  Autenticación de usuarios: Añadir un sistema de inicio de sesión para proteger el acceso.
+3.  Validación robusta: Mejorar la validación de entrada para evitar datos incorrectos o inconsistentes.
+4.  Cifrado: Proteger los datos almacenados mediante cifrado para evitar accesos no autorizados.
+
+## Tratamiento de datos y análisis (6h):
+
+**¿Cómo se gestionan los datos en tu software y qué metodologías utilizas?**
+
+1.  Generación de datos: Los datos (tareas y horas libres) son introducidos por el usuario a través de la interfaz gráfica (GUI) de Tkinter.
+2.  Estructuras de datos:
+    *   Las tareas se almacenan como una lista de tuplas con el formato (nombre, importancia, duración).
+    *   Las horas libres se organizan en un diccionario donde las claves son los días de la semana y los valores son listas de horas disponibles.
+3.  Metodología de priorización: Se utiliza un heap (estructura de datos de prioridad) para ordenar las tareas según su importancia, priorizando las de mayor valor.
+4.  Asignación de tareas: Las tareas se asignan a las horas libres disponibles mediante un algoritmo que recorre las horas y asigna las tareas en función de su duración y prioridad.
+5.  Persistencia: Actualmente, los datos solo se almacenan en memoria durante la ejecución de la aplicación y se pierden al cerrarla.
+
+**¿Qué haces para garantizar la calidad y consistencia de los datos?**
+
+1.  Validación de entrada:
+    *   Se verifica que los campos de importancia y duración sean números enteros positivos.
+    *   Se asegura que el nombre de la tarea no esté vacío.
+2.  Prevención de duplicados:
+    *   Las horas libres no se pueden añadir dos veces al mismo día.
+3.  Integridad de los datos:
+    *   Se valida que las tareas no tengan duración negativa o cero.
+    *   Se asegura que las horas libres estén dentro del rango permitido (8:00 a 19:00).
+4.  Gestión de errores:
+    *   Se muestran mensajes de error claros al usuario si los datos ingresados no son válidos.
+5.  Consistencia en la asignación:
+    *   El algoritmo de generación de horarios verifica que las horas asignadas no se superpongan y que las tareas se distribuyan correctamente según las horas disponibles.
